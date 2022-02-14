@@ -1,0 +1,24 @@
+.web {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+.web-field {
+    font-size: 16px;
+    margin-right: 18px;
+    font-weight: 700;
+}
+.web-field:last-child {
+    margin-right: 0;
+}
+.web-field a {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.field-icon {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
