@@ -1,0 +1,20 @@
+.projects {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+.section-title {
+    font-size: 24px;
+    font-family: 700;
+}
+.project-section {
+    display: flex;
+    text-align: center;
+}
+@media only screen and (max-width: 720px) {
+    .project-section {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+}

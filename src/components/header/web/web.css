@@ -7,6 +7,27 @@
     font-size: 16px;
     margin-right: 18px;
     font-weight: 700;
+    position: relative;
+    padding: 5px 0px;
+}
+.web-field:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #aaa;
+    height: 2px;
+}
+.web-field::before,
+.web-field::after {
+    transition: all .5s;
+}
+.web-field:hover::after {
+    width: 100%;
 }
 .web-field:last-child {
     margin-right: 0;

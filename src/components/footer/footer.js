@@ -1,9 +1,9 @@
 import React from 'react';
-
+import './footer.css';
 function Footer(props) {
     return (
-        <div>
-            This is Footer
+        <div className='footer'>
+           Made by Shubham Karad @2022
         </div>
     );
 }

@@ -1,13 +1,15 @@
 .mobile {
     background-color: white;
     height: 100vh;
-    width: 60vw;
-    position: absolute;
+    width: 50vw;
+    position: fixed;
     right: -15px;
     top: -15px;
     display: flex;
     flex-direction: column;
-    padding: 20px 20px;
+    padding: 20px;
+    transition: transform 0.3s ease-out;
+    display: block;
 }
 .close-menu {
     font-size: 20px;
@@ -31,12 +33,14 @@
 }
 .mobile-options {
     display: flex;
-    align-items: center;
+    align-items: left;
     flex-direction: column;
     margin-top: 30px;
+    margin-left: 20px;
     width: 100%;
     height: 100%;
-    
+    z-index: 999;
+    position: fixed;
 }
 .mobile-field {
     display: flex;

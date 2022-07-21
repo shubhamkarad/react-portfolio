@@ -7,11 +7,12 @@ function Header(props) {
     const [isOpen, setIsOpen] = useState(false);
     return (
         <div className='header'>
-            <div className='header-logo'>Shubham</div>
+            <div className='header-logo'><a href='#home'></a>Shubham</div>
             <div className='menu'>
                 <div className='web-menu'>
                     <Web/>
                 </div>
+                <div className={isOpen ? 'sidenav-overlay' : ''}></div>
                 <div className='mobile-menu' onClick={()=> setIsOpen(!isOpen)}>
                     {isOpen && <Mobile isOpen={isOpen} setIsOpen={setIsOpen}/>}
                     <div>

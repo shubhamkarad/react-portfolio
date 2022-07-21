@@ -9,12 +9,12 @@ function Web(props) {
                 </a>
             </div>
             <div className='web-field'>
-                <a href='#Skills'>
+                <a href='#skills'>
                    <i class="fi fi-rr-laptop field-icon"></i>Skills
                 </a>
             </div>
             <div className='web-field'>
-                <a href='#contact-me'>
+                <a href='#contacts'>
                     <i class="fi fi-rr-envelope field-icon"></i>Contact me
                 </a>
             </div>

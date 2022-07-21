@@ -1,6 +1,5 @@
 .header {
     display: flex;
-    background-color: antiquewhite;
     justify-content: space-between;
     flex: 1;
     padding: 12px;
@@ -21,13 +20,32 @@
 .web-menu {
     display: flex;
 }
+.sidenav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 997;
+  display: none;
+}
 .header-logo {
   font-size: 24px;
   font-weight: 800;
 }
+/* .header-logo:hover {
+    text-shadow: 1px 1px 1px #000000;
+    cursor: pointer;
+} */
 @media only screen and (max-width: 720px) {
     .mobile-menu {
-        display: flex;  
+        display: flex;
+        z-index: 999;
+    }
+    .sidenav-overlay {
+        display: block;
     }
     .web-menu {
         display: none;

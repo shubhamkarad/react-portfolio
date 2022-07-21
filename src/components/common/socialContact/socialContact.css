@@ -8,6 +8,12 @@
     margin-right: 10px;
     text-decoration: none;
     color: black;
+    padding: 10px;
+}
+.social-field:hover {
+    background-color: #add8e677;
+    border-radius: 40%;
+    transition: all .3s;
 }
 .social-field i {
     font-size: 24px;

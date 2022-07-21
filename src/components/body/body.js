@@ -8,21 +8,21 @@ import './body.css';
 function Body(props) {
     return (
         <div className='body'>
-            <div>
+            <section id='abouts'>
                 <About/>
-            </div>
-            <div>
+            </section>
+            <section id='skills'>
                 <Skills/>
-            </div>
-            <div>
+             </section>
+            <section id='project'>
                 <Projects/>
-            </div>
-            <div>
+            </section>
+             <section id='contacts'>
                 <Contact/>
-            </div>
-            <div>
+            </section >
+            <section id='footer'>
                 <Footer/>
-            </div>
+            </section>
         </div>
     );
 }
