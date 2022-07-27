@@ -9,6 +9,10 @@
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.project-card.dark {
+    background-color:#2D4263;
+    box-shadow: 0 4px 8px 0 rgba(46, 46, 46, 0.2), 0 6px 20px 0 rgba(104, 104, 104, 0.19);
+}
 .project-picture {
     width: 20%;
 }

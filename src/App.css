@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 } */
+:root {
+  --light: #d8dbe0;
+  --dark: #28292c;
+  --link: rgb(27, 129, 112);
+  --link-hover: rgb(24, 94, 82);
+  --blue: #e37f2e;
+}
+.app.dark {
+  background-color: #191919;
+  color: white;
+}
+

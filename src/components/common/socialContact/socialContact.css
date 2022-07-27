@@ -10,9 +10,16 @@
     color: black;
     padding: 10px;
 }
+.social-field.dark {
+    color: white;
+}
+.social-field.dark:hover {
+    box-shadow: 0 4px 8px 0 #93939333, 0 6px 20px 0 #93939333;
+    background-color: #2D4263;
+}
 .social-field:hover {
-    background-color: #add8e677;
-    border-radius: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 50%;
     transition: all .3s;
 }
 .social-field i {

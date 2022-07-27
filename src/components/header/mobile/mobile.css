@@ -3,48 +3,58 @@
     height: 100vh;
     width: 50vw;
     position: fixed;
-    right: -15px;
-    top: -15px;
+    right: -100%;
+    top: 0px;
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    transition: transform 0.3s ease-out;
-    display: block;
+    transition: 850ms;
+}
+.mobile.active {
+    right: 0px;
+    transition: 350ms;
+}
+.mobile.dark {
+    background-color: #2D4263;
+    color: white;
+}
+.profile-img {
+    margin: 100px auto 0 auto;
+    height: 130px;
+    width: 130px;
+}
+.profile-img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .close-menu {
-    font-size: 20px;
+    font-size: 16px;
     position: absolute;
     justify-content: flex-end;
-    right: 25px;
-    top: 27px;
-    transform: rotate(45deg);
+    right: 15px;
+    top: 25px;
+    font-weight: bold;
     width: 20px;
     height: 20px;
 }
 .close-menu:hover {
-    transform: rotate(45deg);
     color: white;
-    animation-name: example;
-    animation-duration: 1s;
-}
-@keyframes example {
-  from {color: black; transform: rotate(45deg);}
-  to {color: yellow; transform: rotate(90deg);}
 }
 .mobile-options {
     display: flex;
-    align-items: left;
+    align-items: center;
     flex-direction: column;
     margin-top: 30px;
     margin-left: 20px;
-    width: 100%;
+    width: 40%;
     height: 100%;
     z-index: 999;
     position: fixed;
 }
 .mobile-field {
     display: flex;
-    align-items: center;
+    align-items: left;
     margin-top: 10px;
     
 }
@@ -52,4 +62,7 @@
     display: flex;
     text-decoration: none;
     color: black;
+}
+.mobile.dark .mobile-field a {
+    color: white;
 }
