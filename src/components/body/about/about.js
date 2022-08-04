@@ -28,6 +28,7 @@ function About(props) {
           <img
             src={require("../../../assets/coding.png")}
             className="my-picture"
+            alt="about-us-wall"
           />
         </div>
       </div>

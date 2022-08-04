@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "../../../App";
-import ColorToggle from "../../ColorToggle/ColorToggle";
+import ColorToggle from "../../colorToggle/ColorToggle";
 
 import "./web.css";
 function Web(props) {

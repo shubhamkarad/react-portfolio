@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 // import Mobile from './mobile/mobile';
 import Web from "./web/web";
 import "./header.css";
-import ColorToggle from "../ColorToggle/ColorToggle";
+import ColorToggle from "../colorToggle/ColorToggle";
 import profileImg from "../../assets/shubhProfile.jpg";
 import { ThemeContext } from "../../App";
 

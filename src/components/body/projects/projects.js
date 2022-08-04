@@ -11,7 +11,7 @@ function Projects(props) {
       <label className="section-title">Projects</label>
       <div className="project-section">
         {data.map((project) => {
-          return <ProjectCard project={project} />;
+          return <ProjectCard project={project} key={project.id} />;
         })}
       </div>
     </div>

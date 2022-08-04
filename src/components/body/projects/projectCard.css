@@ -4,10 +4,13 @@
     justify-content: space-between;
     align-items: center;
     margin: 16px 10px 16px 0px;
-    padding: 8px 20px;
+    padding: 20px 20px 15px 20px;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    min-height: 200px;
+    max-height: 600px;
+    height: 100%;
 }
 .project-card.dark {
     background-color:#2D4263;
@@ -20,6 +23,12 @@
     font-size: 20px;
     font-weight: 600;
 }
+.tech-stack{
+    font-weight: bold;
+}
+.project-description {
+    margin: 10px;
+}
 .project-about {
     margin: 5px auto;
 }
@@ -28,6 +37,16 @@
     margin: 5px auto;
     justify-content: space-around;
     
+}
+.view-more-cta {
+    padding: 5px 10px;
+    font: inherit;
+    border-radius: 8px;
+    background-color: rgb(40, 38, 38);
+    color: white;
+    cursor: pointer;
+    border: none;
+    margin: 5px auto;
 }
 .project-link {
     text-decoration: none;

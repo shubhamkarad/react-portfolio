@@ -25,7 +25,6 @@
     margin-right: 120px;
 }
 .resume-download {
-    margin-top: 20px;
     background-color: #faebd7c9;
     padding: 8px 16px;
     border-radius: 5px;
@@ -54,66 +53,6 @@
     border-radius: 8px;
 }
 
-input[type='text'], input[type='email'] {
-    display: block;
-    height: 35px;
-    padding-left: 10px;
-    width: 55%;
-    border: none;
-    margin: 0px auto 10px auto;
-    border-radius: 5px;
-    background-color: #ecf1f1ad;
-}
-textarea {
-    display: block;
-    border: none;
-    width: 55%;
-    padding-left: 10px;
-    margin: 0px auto 10px auto;
-    border-radius: 5px;
-    background-color: #ecf1f1ad;
-}
-.contact-form-wrapper {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 100%;
-}
-.submit-btn {
-    display: block;
-    margin: 10px auto;
-    width: 57%;
-    padding: 10px 16px;
-    border: none;
-    border-radius: 5px;
-    background-color: #24a0ed;
-    color: white;
-    cursor: pointer;
-}
-.submit-btn:hover {
-    background-color: #2393da;
-    transition: all .3s;
-}
-.contact-form-wrapper .form-heading {
-    font-weight: 900;
-    display: block;
-    width: 55%;
-    margin: 0px auto 10px auto;
-    font-size: 20px;
-}
-.success-msg {
-    color: #4F8A10;
-    background-color: #DFF2BF;
-    padding: 8px;
-    margin: 10px auto;
-    width: 55%;
-}
-.error-msg {
-    color: #D8000C;
-    background-color: #FFD2D2;
-    padding: 8px;
-    margin: 10px auto;
-    width: 55%;
-}
 @media only screen and (max-width: 720px) {
     .contact-container {
         flex-direction: column;
@@ -136,19 +75,6 @@ textarea {
     }
     .contact-left .social-icons {
     margin: 0px;
-    }
-    .contact-form-wrapper {
-        padding: 0px;
-    }
-    .contact-form-wrapper .form-heading {
-        width: 100%;
-        text-align: center;
-    }
-    input[type='text'], input[type='email'], textarea {
-        width: 75%;
-    }
-    .submit-btn {
-        width: 78%;
     }
     .download {
         font-size: 16px;
