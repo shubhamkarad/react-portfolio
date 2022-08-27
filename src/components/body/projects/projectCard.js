@@ -1,7 +1,6 @@
 import React, { useContext, useState } from "react";
 import useCollapse from "react-collapsed";
 import { ThemeContext } from "../../../App";
-import Modal from "../../modal/modal";
 import "./projectCard.css";
 function ProjectCard({ project }) {
   // const [isIndex, setIndex] = useState("");
@@ -62,7 +61,8 @@ function ProjectCard({ project }) {
           {project.github && (
             <a className="project-link" href={project.github}>
               <div className="link-button">
-                <i class="devicon-github-original colored link-icon"></i>Github
+                <i className="devicon-github-original colored link-icon"></i>
+                Github
               </div>
             </a>
           )}

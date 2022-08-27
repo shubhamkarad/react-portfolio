@@ -23,6 +23,9 @@ function About(props) {
               ]}
             />
           </span>
+          <a className="about-me-btn" href="#about-me">
+            About me <i className="fa fa-arrow-down"></i>
+          </a>
         </div>
         <div className="about-photo">
           <img

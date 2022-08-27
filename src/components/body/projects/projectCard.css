@@ -46,7 +46,7 @@
     color: white;
     cursor: pointer;
     border: none;
-    margin: 5px auto;
+    margin-top: 15px;
 }
 .project-link {
     text-decoration: none;

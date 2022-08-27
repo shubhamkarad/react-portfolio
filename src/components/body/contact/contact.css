@@ -60,6 +60,9 @@
         align-items: center;
         margin-top: 5px;
     } 
+    .resume-download {
+        margin-top: 5px;
+    }
     .contact-form {
     flex-direction: column;
     justify-content: space-between;

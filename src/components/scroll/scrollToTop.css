@@ -2,11 +2,12 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: rgba(224, 228, 231, 0.333);
+    background-color: rgba(253, 195, 50, 0.862);
     border: 1px solid grey;
-    padding: 10px 10px;
+    padding: 3px 10px 5px;
     border-radius: 50%;
     transition: transform .2s;
+    font-size: 24px;
 }
 .scroll-to-top:hover {
   transform: scale(1.2);

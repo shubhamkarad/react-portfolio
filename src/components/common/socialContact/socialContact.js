@@ -9,7 +9,11 @@ function SocialContact(props) {
     <div className="social-contacts">
       {data.map((item) => {
         return (
-          <a href={item.link} className={`social-field ${colorTheme.theme}`}>
+          <a
+            key={item.id}
+            href={item.link}
+            className={`social-field ${colorTheme.theme}`}
+          >
             <div className="social-icon">
               <i className={item.icon}></i>
             </div>

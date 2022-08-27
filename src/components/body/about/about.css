@@ -19,6 +19,28 @@
 .about-bottom {
     display: flex;
 }
+.about-me-btn {
+    background-color: #faebd7c9;
+    padding: 8px 12px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    margin: 10px 0;
+    display: block;
+    font: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    width: 120px;
+}
+.about-me-btn i {
+    font-size: 14px;
+    background: #ffffff99;
+    padding: 2px 2px 1px;
+    border-radius: 50%;
+}
+
 @media only screen and (max-width: 720px) {
     .about-top {
         flex-direction: column;

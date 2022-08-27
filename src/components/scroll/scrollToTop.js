@@ -23,7 +23,7 @@ const ScrollToTop = () => {
     <div>
       {showButton && (
         <button onClick={scrollToTop} className="scroll-to-top">
-          <i class="fa fa-arrow-up"></i>
+          <i className="fa fa-angle-up"></i>
         </button>
       )}
     </div>

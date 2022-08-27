@@ -20,7 +20,7 @@ function Contact(props) {
                 href={require("../../../assets/resume.pdf")}
                 download="Shubham resume.pdf"
               >
-                <i class="fi-rr-cloud-download download-icon" />
+                <i className="fa fa-download download-icon" />
                 Download Resume
               </a>
             </div>

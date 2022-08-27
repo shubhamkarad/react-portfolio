@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import useInput from "../../../hooks/use-input";
 import "./contactForm.css";
+import Loader from "../../loader/Loader";
 const ContactForm = () => {
   const {
     value: enteredName,
@@ -34,6 +35,7 @@ const ContactForm = () => {
   };
   const [successMsg, setMsg] = useState("");
   const [errorMsg, setErrorMsg] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
   let formIsValid = false;
   if (nameIsValid && emailIsValid && messageIsValid) {
     formIsValid = true;
@@ -43,6 +45,7 @@ const ContactForm = () => {
     if (!nameIsValid) {
       return;
     }
+    setIsLoading(true);
     await axios
       .post("http://localhost:4000/contact-me", user)
       .then((res) => {
@@ -50,13 +53,14 @@ const ContactForm = () => {
         setErrorMsg(res.data.errorMessage);
       })
       .catch((err) => {
-        setErrorMsg(err.data.responseMessage);
-        console.log("error", err.data.responseMessage);
+        setErrorMsg("Something went wrong :(");
+        console.log("Server error");
       });
     console.log(enteredName, enteredEmail);
     resetNameHandler();
     resetEmailHandler();
     resetMessageHandler();
+    setIsLoading(false);
   };
   const emailClass = emailInputHasError
     ? "input-name form-invalid"
@@ -111,7 +115,7 @@ const ContactForm = () => {
             <p className="error-msg">please enter something</p>
           )}
           <button type="submit" disabled={!formIsValid} className="submit-btn">
-            Send
+            {isLoading ? <Loader /> : "Send"}
           </button>
         </form>
       </div>

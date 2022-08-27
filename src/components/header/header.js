@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 // import Mobile from './mobile/mobile';
 import Web from "./web/web";
 import "./header.css";
-import ColorToggle from "../colorToggle/ColorToggle";
+import ColorToggle from "../ColorToggle/ColorToggle";
 import profileImg from "../../assets/shubhProfile.jpg";
 import { ThemeContext } from "../../App";
 
@@ -11,9 +11,7 @@ function Header(props) {
   const colorTheme = useContext(ThemeContext);
   return (
     <div className="header">
-      <div className="header-logo">
-        <a href="#home"></a>Shubham
-      </div>
+      <div className="header-logo">Shubham</div>
       <div className="menu">
         <div className="web-menu">
           <Web />
@@ -32,15 +30,21 @@ function Header(props) {
             </div>
             <div className="mobile-options">
               <div className="mobile-field">
-                <a href="#project">
+                <a href="#about-me">
                   {/* <i class="fi fi-rr-briefcase field-icon"></i> */}
-                  Projects
+                  About me
                 </a>
               </div>
               <div className="mobile-field">
                 <a href="#skills">
                   {/* <i class="fi fi-rr-laptop field-icon"></i> */}
                   Skills
+                </a>
+              </div>
+              <div className="mobile-field">
+                <a href="#project">
+                  {/* <i class="fi fi-rr-briefcase field-icon"></i> */}
+                  Projects
                 </a>
               </div>
               <div className="mobile-field">
@@ -52,7 +56,7 @@ function Header(props) {
             </div>
           </div>
           <div>
-            <i class="fa fa-bars"></i>
+            <i className="fa fa-bars"></i>
           </div>
         </div>
       </div>

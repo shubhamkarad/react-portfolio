@@ -25,6 +25,7 @@ textarea {
     padding-top: 20px;
     padding-bottom: 20px;
     width: 100%;
+    position: relative;
 }
 .submit-btn {
     display: block;
@@ -36,6 +37,10 @@ textarea {
     background-color: #24a0ed;
     color: white;
     cursor: pointer;
+    position: relative;
+}
+.submit-btn i {
+    margin-left: 5px;
 }
 .submit-btn:hover {
     background-color: #2393da;
