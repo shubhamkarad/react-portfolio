@@ -47,7 +47,15 @@ const ContactForm = () => {
     }
     setIsLoading(true);
     await axios
-      .post("http://localhost:4000/contact-me", user)
+      .post(
+        "https://shubham-portfolio-backend.herokuapp.com/contact-me",
+        user,
+        {
+          "Access-Control-Allow-Origin": "http",
+          "Access-Control-Allow-Methods": "POST",
+          "Access-Control-Allow-Headers": "Content-Type",
+        }
+      )
       .then((res) => {
         setMsg(res.data.responseMessage);
         setErrorMsg(res.data.errorMessage);

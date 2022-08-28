@@ -4,7 +4,16 @@ const cors = require("cors");
 const app = express();
 app.use(cors());
 app.use(express.json());
+require("dotenv").config();
+const port = process.env.PORT || 4000;
 
+app.get("/", (req, res) => {
+  res.send("Hello from Shubham");
+});
+
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+}
 app.post("/contact-me", (req, res) => {
   var name = req.body.name;
   var email = req.body.email;
@@ -12,14 +21,14 @@ app.post("/contact-me", (req, res) => {
   var transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: "shubhamdhkarad@gmail.com",
-      pass: "kssffubvwkwvkypa",
+      user: process.env.USER_ID,
+      pass: process.env.PASS_ID,
     },
   });
 
   var mailOptions = {
-    from: "shubhamdhkarad@gmail.com",
-    to: "shubhkrd@gmail.com",
+    from: process.env.USER_ID,
+    to: SEND_TO_ID,
     subject: "Discussion with Shubham",
     text: "That was easy!",
     html: `<h1>Hey Shubham!</h1><p>${name} needs to contact with you! Please find the below message from ${name}</p>
@@ -36,6 +45,6 @@ app.post("/contact-me", (req, res) => {
     }
   });
 });
-app.listen(4000, () => {
+app.listen(port, () => {
   console.log("Server is running :)");
 });
