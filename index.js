@@ -2,11 +2,16 @@ const express = require("express");
 const nodemailer = require("nodemailer");
 const cors = require("cors");
 const app = express();
-app.use(cors());
-app.use(allowCrossDomain);
-app.use(express.json());
-require("dotenv").config();
 const port = process.env.PORT || 4000;
+app.use(cors());
+app.use(express.json());
+app.use(
+  cors({
+    origin: port || "http://localhost:3000",
+    credentials: true,
+  })
+);
+require("dotenv").config();
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
