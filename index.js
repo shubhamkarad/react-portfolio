@@ -5,18 +5,17 @@ const app = express();
 const port = process.env.PORT || 4000;
 app.use(cors());
 app.use(express.json());
-app.use(
-  cors({
-    origin: port || "http://localhost:3000",
-    credentials: true,
-  })
-);
 require("dotenv").config();
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 app.post("/contact-me", (req, res) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested, Content-Type, Accept Authorization"
+  );
   var name = req.body.name;
   var email = req.body.email;
   var message = req.body.message;
