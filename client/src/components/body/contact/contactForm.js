@@ -47,10 +47,7 @@ const ContactForm = () => {
     }
     setIsLoading(true);
     await axios
-      .post(
-        "https://mycorsproxysk.herokuapp.com/https://shubhamkarad.herokuapp.com/contact-me",
-        user
-      )
+      .post("https://shubhamkarad.herokuapp.com/contact-me", user)
       .then((res) => {
         setMsg(res.data.responseMessage);
         setErrorMsg(res.data.errorMessage);
