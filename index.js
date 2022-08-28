@@ -3,7 +3,9 @@ const nodemailer = require("nodemailer");
 const cors = require("cors");
 const app = express();
 const port = process.env.PORT || 4000;
-app.use(cors());
+app.use(
+  cors({ origin: "https://shubhamkarad.herokuapp.com/", credentials: true })
+);
 app.use(express.json());
 require("dotenv").config();
 
@@ -37,6 +39,8 @@ app.post("/contact-me", (req, res) => {
   };
 
   transporter.sendMail(mailOptions, function (error, info) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Methods", "POST, PUT, PATCH, GET, DELETE");
     if (error) {
       res.send({ status: false, errorMessage: "Something went wrong :(" });
       console.log(error);
