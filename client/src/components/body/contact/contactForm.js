@@ -48,7 +48,7 @@ const ContactForm = () => {
     setIsLoading(true);
     await axios
       .post(
-        "https://mycorsproxysk.herokuapp.com/https://shubham-portfolio-backend.herokuapp.com/contact-me",
+        "https://mycorsproxysk.herokuapp.com/https://shubhamkarad.herokuapp.com/contact-me",
         user
       )
       .then((res) => {
