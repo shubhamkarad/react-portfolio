@@ -7,10 +7,6 @@ app.use(express.json());
 require("dotenv").config();
 const port = process.env.PORT || 4000;
 
-app.get("/", (req, res) => {
-  res.send("Hello from Shubham");
-});
-
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
