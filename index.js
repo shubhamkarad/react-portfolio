@@ -46,5 +46,5 @@ app.post("/contact-me", (req, res) => {
   });
 });
 app.listen(port, () => {
-  console.log("Server is running :)");
+  console.log(`Server is running :) at port ${port}`);
 });
