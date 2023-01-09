@@ -1,6 +1,7 @@
 import React from "react";
 import SocialContact from "../../common/socialContact/socialContact";
 import "./about.css";
+import Typical from "react-typical";
 function About(props) {
   return (
     <div className="about">
@@ -9,7 +10,7 @@ function About(props) {
           Hello there!
           <br /> I am <span className="my-name">Shubham Karad</span> <br />
           <span>
-            {/* <Typical
+            <Typical
               loop={Infinity}
               wrapper="span"
               steps={[
@@ -20,7 +21,7 @@ function About(props) {
                 "Photographer",
                 1000,
               ]}
-            /> */}
+            />
           </span>
           <a className="about-me-btn" href="#about-me">
             About me <i className="fa fa-arrow-down"></i>
